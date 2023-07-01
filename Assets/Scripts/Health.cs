@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+   
     [SerializeField] private float startLives;
     public float currentLives { get; private set; }
 
     private Animator anim;
+
+   
 
     private bool dead;
 
@@ -15,15 +18,17 @@ public class Health : MonoBehaviour
     {
         currentLives = startLives;
         anim = GetComponent<Animator>();
+        
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(float _damage)
     {
-        currentLives = Mathf.Clamp(currentLives - damage, 0, startLives);
+        currentLives = Mathf.Clamp(currentLives - _damage, 0, startLives);
         
-        if (currentLives < 0 )
+        if (currentLives > 0 )
         {
             anim.SetTrigger("hurt");
+        
         }
         else
         {
@@ -37,13 +42,13 @@ public class Health : MonoBehaviour
         }
     }
 
-    private void Update()
+    public void AddHealth(float _value)
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            TakeDamage(1);
-        }
+        currentLives = Mathf.Clamp(currentLives + _value, 0, startLives);
     }
+
+    
+
 }
 
    
