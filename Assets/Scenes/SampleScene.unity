@@ -1129,6 +1129,7 @@ GameObject:
   - component: {fileID: 1571337412}
   - component: {fileID: 1571337411}
   - component: {fileID: 1571337410}
+  - component: {fileID: 1571337414}
   m_Layer: 8
   m_Name: huney
   m_TagString: Untagged
@@ -1181,7 +1182,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.011205673, y: -0.028013796}
+  m_Offset: {x: -0.011205673, y: 0.015248865}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1192,7 +1193,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0841904, y: 0.7485191}
+  m_Size: {x: 1.0841904, y: 0.83504444}
   m_EdgeRadius: 0
 --- !u!212 &1571337412
 SpriteRenderer:
@@ -1261,6 +1262,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1571337414
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571337409}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.21631342}
+  serializedVersion: 2
+  m_Radius: 0.5386866
 --- !u!1 &1810061610
 GameObject:
   m_ObjectHideFlags: 0
@@ -1839,6 +1875,37 @@ MonoBehaviour:
   followingTarget: {fileID: 0}
   parallaxStrength: 0.041
   disableVerticalParallax: 0
+--- !u!1 &2037265124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2037265125}
+  m_Layer: 7
+  m_Name: ShootPos
+  m_TagString: Untagged
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2037265125
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037265124}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.1, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2103598781}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2093548530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1960,6 +2027,7 @@ GameObject:
   - component: {fileID: 2103598783}
   - component: {fileID: 2103598784}
   - component: {fileID: 2103598785}
+  - component: {fileID: 2103598786}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -1979,7 +2047,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.7912632
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -2057,7 +2125,8 @@ Transform:
   m_LocalPosition: {x: -6.97, y: -3.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2037265125}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2075,6 +2144,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpForce: 10
+  grounded: 0
+  isLeft: 0
 --- !u!95 &2103598783
 Animator:
   serializedVersion: 5
@@ -2144,3 +2215,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startLives: 5
+--- !u!114 &2103598786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103598777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5552db4a736295b4d94ff3a8fdebda0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pulya: {fileID: 3813976571254399704, guid: 210adca7cd5b8be4dbd95f748d0415fa, type: 3}
+  startPos: {fileID: 2037265125}
+  shootCooldown: 5

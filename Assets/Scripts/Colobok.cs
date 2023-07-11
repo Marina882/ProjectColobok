@@ -9,7 +9,11 @@ public class Colobok : MonoBehaviour
     [SerializeField] private float jumpForce;
     private Animator anim;
 
-    private bool grounded;
+    public bool grounded;
+
+    public bool isLeft = false;
+
+   
 
     private void Awake()
     {
@@ -22,10 +26,20 @@ public class Colobok : MonoBehaviour
         rb.velocity = new Vector2(Input.GetAxis("Horizontal")*speed, rb.velocity.y);
 
         if (Input.GetAxis("Horizontal") > 0)
+        {
             GetComponent<SpriteRenderer>().flipX = false;
+            isLeft = false;
+
+        }
+            
 
         else if (Input.GetAxis("Horizontal") < 0)
+        {
             GetComponent<SpriteRenderer>().flipX = true;
+            isLeft = true;
+
+        }
+            
 
 
         if (Input.GetKey(KeyCode.Space) && grounded)
@@ -47,4 +61,6 @@ public class Colobok : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
             grounded = true;
     }
+
+   
 }
