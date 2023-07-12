@@ -2,42 +2,44 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shoot : MonoBehaviour
+public class BearPul : MonoBehaviour
 {
     public float force = 100;
     private Rigidbody2D phys;
 
-    public Colobok isRotated;
+    public BearScript isRotat;
+
     public float damage;
 
     private void Start()
     {
         phys = GetComponent<Rigidbody2D>();
-        isRotated = GameObject.FindGameObjectWithTag("Player").GetComponent<Colobok>();
+        isRotat = GameObject.FindGameObjectWithTag("Bear").GetComponent<BearScript>();
 
-        if (isRotated.isLeft)
+        if (isRotat.left)
         {
             phys.AddForce(new Vector2(-force, 0));
         }
-        else if (isRotated.isLeft == false)
+
+        else if (isRotat.left == false)
         {
             phys.AddForce(new Vector2(force, 0));
+            GetComponent<SpriteRenderer>().flipX = true;
         }
     }
-
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Ground")
             gameObject.SetActive(false);
 
-        else if (collision.tag == "Bear")
+        else if (collision.tag == "Player")
         {
-            collision.GetComponent<BearScript>().BearDamage(damage);
+            collision.GetComponent<Health>().TakeDamage(damage);
             gameObject.SetActive(false);
         }
-    }
+            
 
+    }
 
 }

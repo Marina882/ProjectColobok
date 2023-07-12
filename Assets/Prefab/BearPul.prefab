@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3813976571254399704
+--- !u!1 &5485602298910459446
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2459717100806309972}
-  - component: {fileID: 3111816785658642472}
-  - component: {fileID: 7618410611871805193}
-  - component: {fileID: 223321977078368713}
-  - component: {fileID: -5458345595842062980}
+  - component: {fileID: 6706283138804175623}
+  - component: {fileID: 2474260707789100738}
+  - component: {fileID: 7067545581501356998}
+  - component: {fileID: 7730768880044726808}
+  - component: {fileID: 3086368727999278706}
   m_Layer: 0
-  m_Name: Ball
+  m_Name: BearPul
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2459717100806309972
+--- !u!4 &6706283138804175623
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3813976571254399704}
+  m_GameObject: {fileID: 5485602298910459446}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.01, y: -3.23, z: 0}
+  m_LocalPosition: {x: -4.05, y: -3.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &3111816785658642472
+--- !u!212 &2474260707789100738
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3813976571254399704}
+  m_GameObject: {fileID: 5485602298910459446}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 338f78e0a023a844e8e22a555f0d3a7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b19cbd2e4f111d942b3b075863e2c962, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -87,29 +87,29 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7618410611871805193
+--- !u!114 &7067545581501356998
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3813976571254399704}
+  m_GameObject: {fileID: 5485602298910459446}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 106ad4b4d21b4cf4c93478778d25c462, type: 3}
+  m_Script: {fileID: 11500000, guid: de8fb8ec7e4d25e4b98d46adb152e2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   force: 0.05
-  isRotated: {fileID: 0}
+  isRotat: {fileID: 0}
   damage: 1
---- !u!50 &223321977078368713
+--- !u!50 &7730768880044726808
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3813976571254399704}
+  m_GameObject: {fileID: 5485602298910459446}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -129,13 +129,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &-5458345595842062980
+--- !u!61 &3086368727999278706
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3813976571254399704}
+  m_GameObject: {fileID: 5485602298910459446}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -161,16 +161,16 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.017758608, y: -0.009865999}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.19, y: 0.72}
+    oldSize: {x: 1.52, y: 0.76}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.19, y: 0.72}
+  m_Size: {x: 0.8846364, y: 0.5034871}
   m_EdgeRadius: 0
