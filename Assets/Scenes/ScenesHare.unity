@@ -475,7 +475,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 156, y: -163, z: 0}
+  - first: {x: 156, y: -162, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 1
@@ -495,7 +495,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 165, y: -159, z: 0}
+  - first: {x: 167, y: -160, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 1
@@ -515,17 +515,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 155, y: -156, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 162, y: -156, z: 0}
+  - first: {x: 164, y: -157, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 1
@@ -536,6 +526,16 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: 146, y: -155, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 1
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 156, y: -155, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 1
@@ -1055,7 +1055,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 40, y: -39, z: 0}
+  - first: {x: 50, y: -37, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 1
@@ -1065,7 +1065,7 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 50, y: -37, z: 0}
+  - first: {x: 43, y: -36, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 1
@@ -1982,11 +1982,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 870589506862195781, guid: c6a1ff3280cd1fc4a84e3b61011ff910, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 196.87
+      value: 195.72
       objectReference: {fileID: 0}
     - target: {fileID: 870589506862195781, guid: c6a1ff3280cd1fc4a84e3b61011ff910, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.06
+      value: -0.78
       objectReference: {fileID: 0}
     - target: {fileID: 870589506862195781, guid: c6a1ff3280cd1fc4a84e3b61011ff910, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3935,11 +3935,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8574612033239910968, guid: 98637ae51b14e904dadb4c98c8112e70, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 164.27
+      value: 165.62
       objectReference: {fileID: 0}
     - target: {fileID: 8574612033239910968, guid: 98637ae51b14e904dadb4c98c8112e70, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.49
+      value: 2.81
       objectReference: {fileID: 0}
     - target: {fileID: 8574612033239910968, guid: 98637ae51b14e904dadb4c98c8112e70, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4198,11 +4198,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3593935828665555535, guid: 927f89c534fbd1143aca1f1b668f8a0c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.748096
+      value: 25.34
       objectReference: {fileID: 0}
     - target: {fileID: 3593935828665555535, guid: 927f89c534fbd1143aca1f1b668f8a0c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.271782
+      value: -4.19
       objectReference: {fileID: 0}
     - target: {fileID: 3593935828665555535, guid: 927f89c534fbd1143aca1f1b668f8a0c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4269,11 +4269,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 870589506862195781, guid: c6a1ff3280cd1fc4a84e3b61011ff910, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 161.55
+      value: 162.94
       objectReference: {fileID: 0}
     - target: {fileID: 870589506862195781, guid: c6a1ff3280cd1fc4a84e3b61011ff910, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.18
+      value: 2.34
       objectReference: {fileID: 0}
     - target: {fileID: 870589506862195781, guid: c6a1ff3280cd1fc4a84e3b61011ff910, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4623,11 +4623,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8574612033239910968, guid: 98637ae51b14e904dadb4c98c8112e70, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 41.7
+      value: 41.74
       objectReference: {fileID: 0}
     - target: {fileID: 8574612033239910968, guid: 98637ae51b14e904dadb4c98c8112e70, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.43
+      value: 2.9
       objectReference: {fileID: 0}
     - target: {fileID: 8574612033239910968, guid: 98637ae51b14e904dadb4c98c8112e70, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5299,11 +5299,11 @@ GameObject:
   - component: {fileID: 1868203285}
   - component: {fileID: 1868203284}
   - component: {fileID: 1868203283}
-  - component: {fileID: 1868203289}
   - component: {fileID: 1868203290}
+  - component: {fileID: 1868203289}
   m_Layer: 0
   m_Name: Hare
-  m_TagString: Bear
+  m_TagString: Hare
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5513,16 +5513,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1868203282}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a2b3fc86abe5c94aa3f6d5a227d6092, type: 3}
+  m_Script: {fileID: 11500000, guid: 3f07dd26fd44a5445af59f0597657841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pul: {fileID: 5911892651612036166, guid: ecb98080c1e26d24796ba8cbe93438eb, type: 3}
+  startPos: {fileID: 1037031035}
   player: {fileID: 1006694951}
-  speed: 2
-  agroDistans: 6
-  damage: 2
-  left: 0
-  startLives: 5
-  beardead: 0
+  shootDistans: 8
+  notshootDistans: 3
+  shootCooldown: 4
+  isDead: {fileID: 1868203290}
 --- !u!114 &1868203290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5532,16 +5532,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1868203282}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d7ae56a40d60d34da487f6fa4b6510e, type: 3}
+  m_Script: {fileID: 11500000, guid: eb57de1bf83ea3b4e8dbb5f4ece05dc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pul: {fileID: 5911892651612036166, guid: ecb98080c1e26d24796ba8cbe93438eb, type: 3}
-  startPos: {fileID: 1037031035}
   player: {fileID: 1006694951}
-  shootDistans: 8
-  notshootDistans: 3
-  shootCooldown: 4
-  isDead: {fileID: 1868203289}
+  speed: 2
+  agroDistans: 6
+  damage: 2
+  left: 0
+  startLives: 5
+  haredead: 0
 --- !u!1001 &1909549311
 PrefabInstance:
   m_ObjectHideFlags: 0

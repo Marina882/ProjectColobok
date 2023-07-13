@@ -42,7 +42,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: bearhurt
+    m_ConditionEvent: harehurt
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 8964191877396140386}
@@ -142,19 +142,19 @@ AnimatorController:
   m_Name: Hare
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: beardie
+  - m_Name: haredie
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: bearhurt
+  - m_Name: harehurt
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: Att
+  - m_Name: AttHare
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -182,7 +182,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Att
+    m_ConditionEvent: AttHare
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7239319617235870701}
@@ -229,7 +229,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: beardie
+    m_ConditionEvent: haredie
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1443474653422629995}
