@@ -12,7 +12,7 @@ public class Health : MonoBehaviour
 
    
 
-    private bool dead;
+    public bool dead;
 
     private void Awake()
     {
@@ -34,9 +34,7 @@ public class Health : MonoBehaviour
         {
             if(!dead)
             {
-                anim.SetTrigger("die");
-                GetComponent<Colobok>().enabled = false;
-                dead = true;
+                Dead();
             }
             
         }
@@ -45,6 +43,13 @@ public class Health : MonoBehaviour
     public void AddHealth(float _value)
     {
         currentLives = Mathf.Clamp(currentLives + _value, 0, startLives);
+    }
+
+    public void Dead() 
+    {
+        anim.SetTrigger("die");
+        GetComponent<Colobok>().enabled = false;
+        dead = true;
     }
 
     

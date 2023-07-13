@@ -13,7 +13,9 @@ public class Colobok : MonoBehaviour
 
     public bool isLeft = false;
 
-   
+    public Health iDead;
+
+
 
     private void Awake()
     {
@@ -60,6 +62,11 @@ public class Colobok : MonoBehaviour
     {
         if (collision.gameObject.tag == "Ground")
             grounded = true;
+
+        if (collision.gameObject.tag == "Deadddd")
+        {
+            iDead.Dead();
+        }
     }
 
    

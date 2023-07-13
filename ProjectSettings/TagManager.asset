@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Bullet
   - Bear
+  - Deadddd
   layers:
   - Default
   - TransparentFX
